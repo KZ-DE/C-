@@ -20,6 +20,18 @@ int pangkat(int a, int b){
     return hasil; 
 }
 
+// fungsi rekursif
+int pangkatrekursif(int a, int b){
+    if (b<=1)
+    {
+        return a;
+    }else{
+        return a*pangkatrekursif(a,b-1);
+    }
+    
+    
+}
+
 int main(int argc, char const *argv[])
 {
     int a;
@@ -28,7 +40,9 @@ int main(int argc, char const *argv[])
     cin>>a;
     cout<< "pangkat: ";
     cin>>b;
-    cout<<"Hasil nya = " << pangkat(a,b) <<endl;
+    cout<<"Hasil nya = " << pangkatrekursif(a,b) <<endl;
+    cout<<sizeof(pangkatrekursif(a,b))<< endl;
+    
     
     return 0;
 }
