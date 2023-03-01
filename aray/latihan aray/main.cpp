@@ -48,10 +48,5 @@ int main(){
     for(int i=1; i<=nilai.size(); i++){
        cout<<"nilai =  "<<nilai[i]<<endl;
     }
-
-
-
-
-
     return 0;
 }
