@@ -12,18 +12,21 @@ int main(){
     int *c=nullptr; // medeklarasikan pointer kosong
 
     int *b = &a; // meakses pointer dari variable a
-    int *x; /* atau bisa n=menggunakan sperti ini
+    int *x; /* atau bisa menggunakan sperti ini
     x = &a; */
     
 
     // melihat nilai dan pointer
-    cout<<"nilai = "<<a<<endl;
-    cout<<"memori : "<<&a<<endl;
-    cout<<"memori : "<<b<<endl;
+    cout<<"nilai a = "<<a<<endl;
+    cout<<"memori a : "<<&a<<endl;
+    cout<<"memori b : "<<b<<endl;
+    cout<<"niali b = "<<*b<<endl;
+    *b = 10; // untuk mengbah nilai memkai cara seperti ini
     cout<<"pointer kosong : "<<c<<endl;
 
     // deferensi (mengambil data dari sebuah pointer)
     cout<<"mengambil nilai data dari pointer :"<<*b<<endl;
+    cout<<"memori b : "<<b<<endl;
     
 
     return 0;
