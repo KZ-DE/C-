@@ -7,12 +7,11 @@ using namespace std;
 
 int main(){
     int a = 5;
-
+    int x=5;
     // membuat variable pointer
     int *c=nullptr; // medeklarasikan pointer kosong
 
     int *b = &a; // meakses pointer dari variable a
-    int *x; 
     /* atau bisa menggunakan sperti ini
     x = &a; */
     
@@ -20,14 +19,25 @@ int main(){
     // melihat nilai dan pointer
     cout<<"nilai a = "<<a<<endl;
     cout<<"memori a : "<<&a<<endl;
+
+    cout << "addres x =" <<&x<<endl;
+
+
     cout<<"memori b : "<<b<<endl;
     cout<<"niali b = "<<*b<<endl;
-    *b = 10; // untuk mengbah nilai memkai cara seperti ini
+    *b = 10; // untuk mengubah nilai memkai cara seperti ini
     cout<<"pointer kosong : "<<c<<endl;
+
+    x = x + 5;
 
     // deferensi (mengambil data dari sebuah pointer)
     cout<<"mengambil nilai data dari pointer :"<<*b<<endl;
     cout<<"memori b : "<<b<<endl;
+    cout << "nilai a : " <<a<<endl; 
+
+    cout << "\n" <<endl;
+
+    cout << "addres x =" <<&x<<endl;
     
 
     return 0;
