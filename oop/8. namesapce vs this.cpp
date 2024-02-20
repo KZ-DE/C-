@@ -96,6 +96,9 @@ int main(int argc, char const *argv[])
 
     delete heap;
     delete player1;
+    cout << "awal" << endl;
     cout<< player1->health << endl;
+    delete player1;
+    cout << "akir";
     return 0;
 }
